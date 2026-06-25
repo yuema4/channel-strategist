@@ -494,6 +494,24 @@ TA 怎么引导互动？
 
 ---
 
+### 博主分析网页版
+
+**在文字版报告输出后**，AI 必须问用户：
+
+> "要不要生成网页版的博主分析报告？"
+
+**触发规则**：
+- 用户说"要""好""生成"→ 生成 HTML 并浏览器打开
+- 用户说"不用"→ 跳过
+
+**HTML 生成方式**：
+- 模板路径：`channel-strategist/templates/blogger-report-capsule.html`
+- 用 Python 替换模板中的 `{占位符}` 为实际内容
+- 输出路径：`channel-strategist/output/{博主名}_分析报告.html`
+- 生成后用 `mcp__playwright__browser_navigate` 打开
+
+---
+
 ## 诊断报告模板
 
 七项检验全部完成、每项都跟用户讨论过之后，整理成报告：

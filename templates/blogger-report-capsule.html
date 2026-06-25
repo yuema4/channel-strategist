@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{name} 博主分析报告</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {{
+  --bg: #FAFAF8;
+  --surface: #FFFFFF;
+  --ink: #1A1A1A;
+  --muted: #8C8C7E;
+  --border: #E8E8E0;
+  --accent: #4A6FA5;
+  --accent-soft: rgba(74,111,165,0.08);
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+}}
+* {{ margin: 0; padding: 0; box-sizing: border-box; }}
+html {{ font-size: 16px; }}
+body {{
+  font-family: 'Inter', 'Noto Serif SC', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}}
+.hero {{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 32px 56px;
+  text-align: center;
+}}
+.hero-tag {{
+  display: inline-block;
+  background: var(--accent);
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}}
+.hero h1 {{ font-size: 28px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }}
+.hero .oneliner {{ font-size: 16px; color: var(--muted); }}
+.section {{
+  max-width: 620px;
+  margin: 0 auto 48px;
+  padding: 0 32px;
+}}
+.section-title {{
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}}
+.card {{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin-bottom: 12px;
+}}
+.stat-grid {{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}}
+.stat-item {{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  text-align: center;
+}}
+.stat-val {{ font-size: 22px; font-weight: 700; }}
+.stat-label {{ font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 4px; }}
+.capsule {{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}}
+.capsule.accent {{ background: var(--accent-soft); border-color: rgba(74,111,165,0.2); }}
+.capsule-dot {{ width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; background: var(--accent); }}
+.belief-item {{
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}}
+.belief-item:last-child {{ border-bottom: none; }}
+.belief-num {{ font-size: 12px; font-weight: 700; color: var(--accent); }}
+.belief-text {{ font-size: 15px; font-weight: 600; margin: 4px 0; }}
+.belief-source {{ font-size: 12px; color: var(--muted); }}
+.formula-table {{ width: 100%; border-collapse: collapse; font-size: 14px; }}
+.formula-table th {{
+  font-size: 11px;
+  text-align: left;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}}
+.formula-table td {{ padding: 10px 0; border-bottom: 1px solid rgba(232,232,224,0.6); }}
+.formula-table .td-emph {{ font-size: 14px; font-weight: 600; }}
+.action-grid {{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}}
+.action-card {{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}}
+.action-card.good {{ border-left: 3px solid #81B29A; }}
+.action-card.adapt {{ border-left: 3px solid #E0C060; }}
+.action-card.avoid {{ border-left: 3px solid #E07A5F; }}
+.action-label {{ font-size: 12px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 8px; }}
+.action-label.good {{ color: #5A8A6E; }}
+.action-label.adapt {{ color: #B09030; }}
+.action-label.avoid {{ color: #C06040; }}
+.action-text {{ font-size: 14px; }}
+.oneliner-block {{
+  text-align: center;
+  padding: 48px 32px;
+}}
+.oneliner-capsule {{
+  display: inline-block;
+  background: var(--accent);
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 16px 36px;
+  border-radius: var(--radius-lg);
+  max-width: 480px;
+}}
+.foot {{
+  text-align: center;
+  padding: 32px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}}
+@media (max-width: 600px) {{
+  .hero h1 {{ font-size: 22px; }}
+  .stat-grid {{ grid-template-columns: 1fr 1fr; }}
+  .action-grid {{ grid-template-columns: 1fr; }}
+}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-tag">CREATOR ANALYSIS &middot; 博主分析</div>
+  <h1>{name}</h1>
+  <p class="oneliner">{oneliner}</p>
+</div>
+
+<div class="section">
+  <div class="stat-grid">
+    <div class="stat-item"><div class="stat-val">{platform}</div><div class="stat-label">平台</div></div>
+    <div class="stat-item"><div class="stat-val">{followers}</div><div class="stat-label">粉丝</div></div>
+    <div class="stat-item"><div class="stat-val">{category}</div><div class="stat-label">品类</div></div>
+    <div class="stat-item"><div class="stat-val">{formula}</div><div class="stat-label">底层公式</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">人设拆解</div>
+  <div class="card">
+    {persona_html}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">认知层 &middot; TA 怎么想</div>
+  <div class="card">
+    {beliefs_html}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">策略层 &middot; TA 怎么运营</div>
+  <div class="card">
+    {strategy_html}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">内容层 &middot; TA 怎么写</div>
+  <div class="card">
+    {content_html}
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">对你有什么用</div>
+  <div class="action-grid">
+    <div class="action-card good">
+      <div class="action-label good">✅ 立刻可复制</div>
+      <div class="action-text">{good_copy}</div>
+    </div>
+    <div class="action-card adapt">
+      <div class="action-label adapt">⚠️ 需要适配</div>
+      <div class="action-text">{adapt_copy}</div>
+    </div>
+    <div class="action-card avoid">
+      <div class="action-label avoid">❌ 不适合你</div>
+      <div class="action-text">{avoid_copy}</div>
+    </div>
+  </div>
+</div>
+
+<div class="oneliner-block">
+  <div class="oneliner-capsule">{closing_line}</div>
+</div>
+
+<div class="foot">
+  channel-strategist &middot; 博主分析报告 &middot; generated on {generated_at}
+</div>
+
+</body>
+</html>
