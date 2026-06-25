@@ -198,7 +198,8 @@ channel-strategist/
 │   ├── 03-rhythm.md             # 排节奏：18 月 + 30 天清单
 │   └── 04-review.md             # 复盘：周 / 月 / 季度
 └── templates/
-    └── ikigai-capsule.html      # Ikigai 网页版 Capsule 模板
+    ├── ikigai-capsule.html      # Ikigai 网页版 Capsule 模板
+    └── blogger-report-capsule.html # 博主分析网页版模板
 ```
 
 ---
