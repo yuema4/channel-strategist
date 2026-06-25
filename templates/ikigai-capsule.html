@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{name}的Ikigai频道定位</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {{
+  --bg: #FAFAF8;
+  --surface: #FFFFFF;
+  --ink: #1A1A1A;
+  --muted: #8C8C7E;
+  --border: #E8E8E0;
+  --accent-love: #E07A5F;
+  --accent-skills: #81B29A;
+  --accent-needs: #7B9EC7;
+  --accent-market: #E0C060;
+  --accent-center: #3D405B;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+}}
+* {{ margin: 0; padding: 0; box-sizing: border-box; }}
+html {{ font-size: 16px; }}
+body {{
+  font-family: 'Inter', 'Noto Serif SC', -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}}
+.hero {{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 32px 56px;
+  text-align: center;
+}}
+.hero-tag {{
+  display: inline-block;
+  background: var(--accent-center);
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 24px;
+}}
+.hero h1 {{
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}}
+.hero .sub {{
+  font-size: 16px;
+  color: var(--muted);
+  font-weight: 400;
+}}
+.diagram-wrap {{
+  max-width: 560px;
+  margin: 0 auto 64px;
+  padding: 0 32px;
+}}
+.ikigai-circles {{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  position: relative;
+  aspect-ratio: 1;
+}}
+.ikigai-circle {{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-lg);
+  margin: -1px;
+}}
+.ikigai-circle.c-love {{ background: rgba(224,122,95,0.12); color: #C06040; }}
+.ikigai-circle.c-skills {{ background: rgba(129,178,154,0.12); color: #5A8A6E; }}
+.ikigai-circle.c-needs {{ background: rgba(123,158,199,0.12); color: #5A78A0; }}
+.ikigai-circle.c-market {{ background: rgba(224,192,96,0.14); color: #B09030; }}
+.ikigai-circle .circle-label {{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}}
+.center-card {{
+  max-width: 560px;
+  margin: -28px auto 56px;
+  padding: 0 32px;
+}}
+.center-inner {{
+  background: var(--accent-center);
+  color: #FFF;
+  border-radius: var(--radius-md);
+  padding: 32px;
+  text-align: center;
+}}
+.center-inner .ikigai-label {{
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 12px;
+}}
+.center-inner .ikigai-direction {{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}}
+.center-inner .ikigai-oneliner {{
+  font-size: 14px;
+  opacity: 0.8;
+  font-weight: 400;
+}}
+.center-inner .ikigai-score {{
+  margin-top: 16px;
+  font-size: 11px;
+  opacity: 0.5;
+  letter-spacing: 0.06em;
+}}
+.section {{
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 0 32px;
+}}
+.section-title {{
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}}
+.card {{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  margin-bottom: 12px;
+}}
+.card-row {{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}}
+.card-row:last-child {{ margin-bottom: 0; }}
+.capsule {{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}}
+.capsule.accent-love {{ background: rgba(224,122,95,0.08); border-color: rgba(224,122,95,0.2); }}
+.capsule.accent-skills {{ background: rgba(129,178,154,0.08); border-color: rgba(129,178,154,0.2); }}
+.capsule.accent-needs {{ background: rgba(123,158,199,0.08); border-color: rgba(123,158,199,0.2); }}
+.capsule.accent-market {{ background: rgba(224,192,96,0.10); border-color: rgba(224,192,96,0.25); }}
+.capsule-dot {{
+  width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+}}
+.intersection-grid {{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}}
+.intersection-card {{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}}
+.intersection-card .int-label {{
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}}
+.intersection-card .int-note {{
+  font-size: 12px;
+  color: var(--muted);
+}}
+.risk-list {{
+  list-style: none;
+}}
+.risk-list li {{
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}}
+.risk-list li:last-child {{ border-bottom: none; }}
+.risk-list li::before {{
+  content: "\\26A0\\FE0F ";
+}}
+.next-step {{
+  text-align: center;
+  padding: 48px 32px;
+}}
+.next-capsule {{
+  display: inline-block;
+  background: var(--accent-center);
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 12px 32px;
+  border-radius: var(--radius-lg);
+}}
+.foot {{
+  text-align: center;
+  padding: 32px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}}
+@media (max-width: 600px) {{
+  .hero h1 {{ font-size: 22px; }}
+  .intersection-grid {{ grid-template-columns: 1fr; }}
+}}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-tag">IKIGAI &middot; 频道定位</div>
+  <h1>{name}的Ikigai</h1>
+  <p class="sub">四圈交叉找到你的内容方向</p>
+</div>
+<div class="diagram-wrap">
+  <div class="ikigai-circles">
+    <div class="ikigai-circle c-love">
+      <div>
+        <div class="circle-label">{love_icon} Passion</div>
+        <div>{love}</div>
+      </div>
+    </div>
+    <div class="ikigai-circle c-skills">
+      <div>
+        <div class="circle-label">{skills_icon} Skills</div>
+        <div>{skills}</div>
+      </div>
+    </div>
+    <div class="ikigai-circle c-market">
+      <div>
+        <div class="circle-label">{market_icon} Market</div>
+        <div>{market}</div>
+      </div>
+    </div>
+    <div class="ikigai-circle c-needs">
+      <div>
+        <div class="circle-label">{needs_icon} Mission</div>
+        <div>{world_needs}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="center-card">
+  <div class="center-inner">
+    <div class="ikigai-label">\\U0001F3AF Ikigai \\u4E2D\\u5FC3 \\xB7 \\u4F18\\u5148\\u5C1D\\u8BD5</div>
+    <div class="ikigai-direction">{center}</div>
+    <div class="ikigai-oneliner">{oneliner}</div>
+    <div class="ikigai-score">\\u56DB\\u5708\\u91CD\\u53E0\\u5EA6 {overlap_score}</div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">\\u56DB\\u5708\\u5408\\u6210</div>
+  <div class="card">
+    <div class="card-row">
+      <span class="capsule accent-love"><span class="capsule-dot" style="background:#E07A5F"></span>\\u70ED\\u7231</span>
+      <span style="font-size:14px">{love}</span>
+    </div>
+    <div class="card-row">
+      <span class="capsule accent-skills"><span class="capsule-dot" style="background:#81B29A"></span>\\u64C5\\u957F</span>
+      <span style="font-size:14px">{skills}</span>
+    </div>
+    <div class="card-row">
+      <span class="capsule accent-needs"><span class="capsule-dot" style="background:#7B9EC7"></span>\\u4E16\\u754C\\u9700\\u8981</span>
+      <span style="font-size:14px">{world_needs}</span>
+    </div>
+    <div class="card-row">
+      <span class="capsule accent-market"><span class="capsule-dot" style="background:#E0C060"></span>\\u80FD\\u53D8\\u73B0</span>
+      <span style="font-size:14px">{market}</span>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">\\u56DB\\u5708\\u4EA4\\u53C9\\u70B9</div>
+  <div class="intersection-grid">
+    <div class="intersection-card" style="border-left:3px solid #E07A5F">
+      <div class="int-label" style="color:#C06040">\\u70ED\\u7231 \\xD7 \\u64C5\\u957F</div>
+      <div style="font-size:15px;font-weight:600;margin-bottom:4px">{is_love_skills_label}</div>
+      <div class="int-note">{is_love_skills_note}</div>
+    </div>
+    <div class="intersection-card" style="border-left:3px solid #81B29A">
+      <div class="int-label" style="color:#5A8A6E">\\u64C5\\u957F \\xD7 \\u53D8\\u73B0</div>
+      <div style="font-size:15px;font-weight:600;margin-bottom:4px">{is_skills_market_label}</div>
+      <div class="int-note">{is_skills_market_note}</div>
+    </div>
+    <div class="intersection-card" style="border-left:3px solid #E0C060">
+      <div class="int-label" style="color:#B09030">\\u53D8\\u73B0 \\xD7 \\u4E16\\u754C\\u9700\\u8981</div>
+      <div style="font-size:15px;font-weight:600;margin-bottom:4px">{is_market_needs_label}</div>
+      <div class="int-note">{is_market_needs_note}</div>
+    </div>
+    <div class="intersection-card" style="border-left:3px solid #7B9EC7">
+      <div class="int-label" style="color:#5A78A0">\\u4E16\\u754C\\u9700\\u8981 \\xD7 \\u70ED\\u7231</div>
+      <div style="font-size:15px;font-weight:600;margin-bottom:4px">{is_needs_love_label}</div>
+      <div class="int-note">{is_needs_love_note}</div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="section-title">\\u8FB9\\u754C\\u63D0\\u9192</div>
+  <ul class="risk-list">
+    {risks_html}
+  </ul>
+</div>
+<div class="next-step">
+  <div class="next-capsule">\\u2192 \\u4E0B\\u4E00\\u6B65\\uFF1A{next_step}</div>
+</div>
+<div class="foot">
+  channel-strategist \\xB7 Ikigai \\u9891\\u9053\\u5B9A\\u4F4D\\u62A5\\u544A \\xB7 \\u751F\\u6210\\u4E8E {generated_at}
+</div>
+</body>
+</html>
