@@ -554,7 +554,7 @@ TA 怎么引导互动？
 - 模板路径：`channel-strategist/templates/blogger-report-capsule.html`
 - 用 Python 替换模板中的 `{占位符}` 为实际内容
 - 输出路径：`channel-strategist/output/{博主名}_分析报告.html`
-- 生成后用 `mcp__playwright__browser_navigate` 打开
+- 生成后用浏览器打开 HTML 文件
 
 ---
 

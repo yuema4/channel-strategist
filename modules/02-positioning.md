@@ -274,7 +274,7 @@ data = {
 - 输出路径：`channel-strategist/output/{用户名}_Ikigai频道定位.html`
 - 用Python替换 `{{占位符}}` 或直接构造完整HTML
 
-**生成后**：启动本地HTTP服务器，用 `mcp__playwright__browser_navigate` 打开。
+**生成后**：启动本地 HTTP 服务器，用浏览器打开生成的 HTML 文件。
 
 ---
 
