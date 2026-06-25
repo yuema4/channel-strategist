@@ -173,7 +173,7 @@ Or download the repo and copy to `~/.claude/skills/channel-strategist/`.
 **零外部依赖，开箱即用。** 所有方法论完全内置。<br>
 ***Zero external dependencies. Works out of the box.** All methods are fully built-in.*
 
-> 💡 **可选增强 / Optional**：安装[博主蒸馏器 / blogger-distiller](https://github.com/otter1101/blogger-distiller) 后，三层蒸馏可从"手动观察"升级为"数据驱动"——自动采集博主笔记的标题、正文、评论、标签等全量数据，分析更精准。不装也完全能用。
+> 💡 **推荐安装 / Recommended**：[博主蒸馏器 / blogger-distiller](https://github.com/otter1101/blogger-distiller) — 自动采集博主笔记全量数据（30-50 条），三层蒸馏从"手动翻 5-8 条"升级为"数据驱动分析"，结论有统计支撑。不装也能用，手动方式是备选。
 
 ---
 
