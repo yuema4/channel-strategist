@@ -24,7 +24,7 @@
 |:---|:---|:---|
 | 我适合做什么方向？<br>*What niche should I pick?* | 从零找到你的频道定位<br>*Find your positioning from scratch* | **Ikigai 四圈自测**<br>*Ikigai 4-Circle* |
 | 我的账号有什么问题？<br>*What's wrong with my account?* | 给商业模式打分<br>*Score your business model* | **七项检验**（0-70 分）<br>*7-Item Audit* |
-| 我该学谁、避谁？<br>*Who should I learn from?* | 找到对标博主<br>*Find the right benchmarks* | **五重过滤 + 三层蒸馏**<br>*5-Filter + 3-Layer Distill* |
+| 我该学谁、避谁？<br>*Who should I learn from?* | 找到对标博主<br>*Find the right benchmarks* | **五重过滤 + 四层蒸馏**<br>*5-Filter + 4-Layer Distill* |
 | 这个选题值不值得做？<br>*Is this topic worth it?* | 过筛子判定<br>*Run it through the screens* | **3 把筛子**<br>*3 Screens* |
 | 接下来 30 天拍什么？<br>*What to make for 30 days?* | 排内容清单<br>*Build a content calendar* | **18 月节奏 + 30 天清单**<br>*18-Month + 30-Day Plan* |
 | 这周数据怎么样？<br>*How did this week go?* | 复盘 + 调整<br>*Review + adjust* | **周/月/季度复盘**<br>*Weekly/Monthly Review* |
@@ -36,22 +36,22 @@
 
 ## 案例 / Case Studies
 
-### 案例 1：某数码博主 — 从迷茫到"AI × 手账 × 数码"交叉定位
+### 案例 1：某数码博主 — 从数据中找到"AI 自媒体"方向
 
-**背景**：小红书 3 万粉博主，做过手账、Notion 教程、AI 内容，但一直说不清自己是谁。接过数码产品和 AI 工具的广告，变现了 5 万，但都是被动接单。
+**背景**：小红书 3 万粉博主，做过手账、Notion 教程、AI 内容。数码测评播放量一般，但"Agent 小队"和"内容 Skill 分享"播放量突破 1000+。接过广告变现 5 万，但方向分散、定位模糊。
 
 **诊断结果**（七项检验：37/70）：
-- 客户是谁？⚠️ 粉丝结构偏杂，手账粉和 AI 粉不重叠
-- 卖什么？⚠️ 有广告收入但没有自有产品
-- 怎么长大？❌ 没有杠杆，增长全靠自己
+- 客户是谁？⚠️ 粉丝来源不统一——AI 自媒体内容来的人最多
+- 卖什么？⚠️ 有广告但没有自有产品
+- 怎么长大？❌ 增长靠运气，内容方向靠感觉
 
 **战略决策**：
-- 砍掉纯手账内容和旅行 vlog → 开小号承接
-- 主号定位：**"用 AI 做手账的数码博主"**（国内唯一这个交叉点）
-- 内容配比 5:2:2:1（主 B:AI×手账 50% / 次 B:设备×AI 20% / C:vibecoding 20% / A:纯设备 10%）
-- 18 个月目标：3 万 → 10 万粉，塔尖客户占比从 20% → 50%
+- 数据说话：AI 自媒体内容播放量最好 → 定为主方向
+- 内容架构四线：AI 自媒体（40% 涨粉） + AI 工作流（25% 接广告） + 数码×效率（15% 接广告） + Vibe Coding（10% 产品） + 口播书影（10% 流量入口）
+- 变现三阶段：短期靠广告（工作流+数码），中期靠产品（Vibe Coding），长期靠私域高客单（AI 自媒体信任积累）
+- 18 个月目标：3 万 → 10 万粉
 
-**一句话处方**：你不是缺流量，你是缺产品——没有产品，10 万粉只是数字。
+**一句话处方**：你不是没方向，是你的数据已经告诉你了方向——追着播放量最好的打。
 
 ---
 
@@ -124,8 +124,8 @@ AI 第一句话："把你的付款链接发给我看看？"
   Ikigai 4-Circle → Center → 3 Screens → Flywheel → Calendar
 
 有账号（优化方向 / Have an Account）：
-  七项检验 → 五重过滤 → 三层蒸馏 → 3 把筛子 → 飞轮 → 排节奏 → 复盘
-  7-Item Audit → 5-Filter → 3-Layer Distill → 3 Screens → Flywheel → Calendar → Review
+  七项检验 → 五重过滤 → 四层蒸馏 → 3 把筛子 → 飞轮 → 排节奏 → 复盘
+  7-Item Audit → 5-Filter → 4-Layer Distill → 3 Screens → Flywheel → Calendar → Review
 ```
 
 ---
@@ -137,7 +137,7 @@ AI 第一句话："把你的付款链接发给我看看？"
 | 0 | **Ikigai 四圈 / 4-Circle** | 新手找方向：热爱 × 擅长 × 世界需要 × 能变现<br>*Find your niche through 4 intersecting circles* |
 | 1 | **七项检验 / 7-Item Audit** | 账号商业模式诊断，0-70 分，及格线 49<br>*Business model diagnosis, score 0-70* |
 | 2 | **五重过滤 / 5-Filter** | 过滤不值得模仿的对标（赚钱/看懂/能仿/排除自我/不讨论本质）<br>*Filter out benchmarks not worth copying* |
-| 3 | **三层蒸馏 / 3-Layer Distill** | 拆解博主：认知层（怎么想）→ 策略层（怎么运营）→ 内容层（怎么写）<br>*Analyze any creator across 3 layers* |
+| 3 | **四层蒸馏 / 4-Layer Distill** | 拆解博主：认知层（怎么想）→ 策略层（怎么运营）→ 内容层（怎么做内容+口播）→ 工具链层（用什么工具）<br>*Analyze any creator across 4 layers* |
 | 4 | **3 把筛子 / 3 Screens** | 决策"做不做"：资源匹配 × 市场稀缺 × 战略一致<br>*Should you do it? 3 screens to decide* |
 | 5 | **飞轮模型 / Flywheel** | 理解生意怎么转：入口 → 信任 → 人设 → 变现 → 反哺<br>*How your business spins: Entry → Trust → Identity → Revenue → Reinvest* |
 
@@ -168,7 +168,7 @@ cp -r channel-strategist ~/.claude/skills/
 |:---|:---|
 | "诊断我的账号" / "我账号怎么样" | 七项检验诊断 |
 | "帮我找方向" / "新手小白" / "不知道做什么" | Ikigai 四圈自测 |
-| "分析这个博主" / "拆解博主" | 三层蒸馏 |
+| "分析这个博主" / "拆解博主" | 四层蒸馏 |
 | "找对标" / "学谁好" | 五重过滤 |
 | "这个选题值不值得做" | 3 把筛子 |
 | "30 天怎么排" / "这周拍什么" | 排节奏 |
@@ -181,7 +181,7 @@ cp -r channel-strategist ~/.claude/skills/
 **零外部依赖，开箱即用。** 所有方法论完全内置。<br>
 ***Zero external dependencies. Works out of the box.** All methods are fully built-in.*
 
-> 💡 **推荐安装 / Recommended**：[博主蒸馏器 / blogger-distiller](https://github.com/otter1101/blogger-distiller) — 自动采集博主笔记全量数据（30-50 条），三层蒸馏从"手动翻 5-8 条"升级为"数据驱动分析"，结论有统计支撑。不装也能用，手动方式是备选。
+> 💡 **推荐安装 / Recommended**：[博主蒸馏器 / blogger-distiller](https://github.com/otter1101/blogger-distiller) — 自动采集博主笔记全量数据（30-50 条），四层蒸馏从"手动翻 5-8 条"升级为"数据驱动分析"，结论有统计支撑。不装也能用，手动方式是备选。
 
 ---
 
@@ -193,7 +193,7 @@ channel-strategist/
 ├── README.md                    # 本文件 / This file
 ├── LICENSE                      # MIT
 ├── modules/
-│   ├── 01-diagnosis.md          # 诊断：七项检验 + 三层蒸馏
+│   ├── 01-diagnosis.md          # 诊断：七项检验 + 四层蒸馏
 │   ├── 02-positioning.md        # 定赛道：Ikigai + 五重过滤 + 3 把筛子 + 飞轮
 │   ├── 03-rhythm.md             # 排节奏：18 月 + 30 天清单
 │   └── 04-review.md             # 复盘：周 / 月 / 季度
