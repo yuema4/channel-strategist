@@ -119,6 +119,7 @@
 | 3 | **四层蒸馏 / 4-Layer Distill** | 拆解博主：认知层（怎么想）→ 策略层（怎么运营）→ 内容层（怎么做内容+口播）→ 工具链层（用什么工具）<br>*Analyze any creator across 4 layers* |
 | 4 | **3 把筛子 / 3 Screens** | 决策"做不做"：资源匹配 × 市场稀缺 × 战略一致<br>*Should you do it? 3 screens to decide* |
 | 5 | **飞轮模型 / Flywheel** | 理解生意怎么转：入口 → 信任 → 人设 → 变现 → 反哺<br>*How your business spins: Entry → Trust → Identity → Revenue → Reinvest* |
+| 6 | **内容圈层模型 / Content Circle** | 从小众走向大众：核心圈（种子用户）→ 中间圈（扩大影响力）→ 大众圈（破圈触达）<br>*Expand from niche to mass: Core → Middle → Mass* |
 
 ---
 
@@ -152,6 +153,7 @@ cp -r channel-strategist ~/.claude/skills/
 | "这个选题值不值得做" | 3 把筛子 |
 | "30 天怎么排" / "这周拍什么" | 排节奏 |
 | "这周/这个月数据怎么样" | 复盘 |
+| "怎么扩大受众" / "内容怎么破圈" | 内容圈层模型 |
 
 ---
 
