@@ -99,12 +99,12 @@
 
 ```
 新手（无方向 / No Direction）：
-  Ikigai 四圈自测 → 中心方向 → 3 把筛子 → 飞轮 → 排节奏
-  Ikigai 4-Circle → Center → 3 Screens → Flywheel → Calendar
+  Ikigai 四圈自测 → 3 把筛子 → 飞轮 → 内容圈层 → 排节奏
+  Ikigai 4-Circle → 3 Screens → Flywheel → Content Circle → Calendar
 
 有账号（优化方向 / Have an Account）：
-  七项检验 → 五重过滤 → 四层蒸馏 → 3 把筛子 → 飞轮 → 排节奏 → 复盘
-  7-Item Audit → 5-Filter → 4-Layer Distill → 3 Screens → Flywheel → Calendar → Review
+  七项检验 → 五重过滤 → 四层蒸馏 → 3 把筛子 → 飞轮 → 内容圈层 → 排节奏 → 复盘
+  7-Item Audit → 5-Filter → 4-Layer Distill → 3 Screens → Flywheel → Content Circle → Calendar → Review
 ```
 
 ---
@@ -154,6 +154,16 @@ cp -r channel-strategist ~/.claude/skills/
 | "30 天怎么排" / "这周拍什么" | 排节奏 |
 | "这周/这个月数据怎么样" | 复盘 |
 | "怎么扩大受众" / "内容怎么破圈" | 内容圈层模型 |
+
+---
+
+## 更新 / Update
+
+```bash
+cd ~/.claude/skills/channel-strategist && git pull
+```
+
+或对 AI 说：**"升级频道战略师"** / **"Upgrade channel-strategist"**
 
 ---
 
