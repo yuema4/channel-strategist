@@ -1,3 +1,5 @@
+
+
 <div align="center">
 
 # 频道战略师 · Channel Strategist
@@ -128,7 +130,7 @@
 ### Claude Code
 
 ```bash
-git clone https://github.com/你的用户名/channel-strategist.git
+git clone https://github.com/yuema4/channel-strategist.git
 cp -r channel-strategist ~/.claude/skills/
 ```
 
