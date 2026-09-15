@@ -26,7 +26,7 @@
 | 我的账号有什么问题？<br>*What's wrong with my account?* | 给商业模式打分<br>*Score your business model* | **七项检验**（0-70 分）<br>*7-Item Audit* |
 | 我该学谁、避谁？<br>*Who should I learn from?* | 找到对标博主<br>*Find the right benchmarks* | **五重过滤 + 四层蒸馏**<br>*5-Filter + 4-Layer Distill* |
 | 这个选题值不值得做？<br>*Is this topic worth it?* | 过筛子判定<br>*Run it through the screens* | **3 把筛子**<br>*3 Screens* |
-| 接下来 30 天拍什么？<br>*What to make for 30 days?* | 排内容清单<br>*Build a content calendar* | **18 月节奏 + 30 天清单**<br>*18-Month + 30-Day Plan* |
+| 接下来 30 天拍什么？<br>*What to make for 30 days?* | 排内容清单<br>*Build a content calendar* | **3 年节奏 + 30 天清单**<br>*3-Year + 30-Day Plan* |
 | 这周数据怎么样？<br>*How did this week go?* | 复盘 + 调整<br>*Review + adjust* | **周/月/季度复盘**<br>*Weekly/Monthly Review* |
 
 **它不是内容执行助手**——不写脚本、不起标题、不检查 AI 味。它只做一件事：**帮你做对战略决策**。<br>
@@ -49,7 +49,11 @@
 - 数据说话：AI 自媒体内容播放量最好 → 定为主方向
 - 内容架构四线：AI 自媒体（40% 涨粉） + AI 工作流（25% 接广告） + 数码×效率（15% 接广告） + Vibe Coding（10% 产品） + 口播书影（10% 流量入口）
 - 变现三阶段：短期靠广告（工作流+数码），中期靠产品（Vibe Coding），长期靠私域高客单（AI 自媒体信任积累）
-- 18 个月目标：3 万 → 10 万粉
+- 3 年目标：
+  - 前 6 个月：验证方向，完成第一次商单变现
+  - 后 6 个月：3000-5000 粉，月收入 2000-3000 元
+  - 第 2 年：1 万粉，月收入 5000+ 元
+  - 第 3 年：3-5 万粉，月收入 1 万+
 
 **一句话处方**：你不是没方向，是你的数据已经告诉你了方向——追着播放量最好的打。
 
@@ -186,7 +190,7 @@ channel-strategist/
 ├── modules/
 │   ├── 01-diagnosis.md          # 诊断：七项检验 + 四层蒸馏
 │   ├── 02-positioning.md        # 定赛道：Ikigai + 五重过滤 + 3 把筛子 + 飞轮
-│   ├── 03-rhythm.md             # 排节奏：18 月 + 30 天清单
+│   ├── 03-rhythm.md             # 排节奏：3 年 + 30 天清单
 │   └── 04-review.md             # 复盘：周 / 月 / 季度
 └── templates/
     ├── ikigai-capsule.html      # Ikigai 网页版 Capsule 模板
